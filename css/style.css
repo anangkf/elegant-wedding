@@ -48,6 +48,10 @@ body {
   background: var(--bg);
 }
 
+.bold {
+  font-weight: bold;
+}
+
 /* Gaya untuk popup */
 .popup {
   display: none; /* Mulai dengan mengatur popup menjadi tersembunyi */
@@ -547,6 +551,7 @@ body {
   /* gap: 2rem; */
 }
 
+
 .event .card .box-date .date-event .tgl,
 .event .card .box-date .date-event .detail {
   display: flex;
@@ -579,6 +584,14 @@ body {
   margin: 0 3rem;
   border-top: 1px solid var(--dark-75);
 }
+
+.event .card .box-date .date-event .jam .time {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  font-size: 1.5rem;
+}
+
 .event .card .box-date .date-event .jam p {
   font-size: 1.7rem;
   font-weight: 400;
@@ -711,6 +724,14 @@ body {
   margin: 0 3rem;
   border-top: 1px solid var(--dark-75);
 }
+
+.event-2 .card .box-date .date-event-2 .jam .time {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  font-size: 1.5rem;
+}
+
 .event-2 .card .box-date .date-event-2 .jam p {
   font-size: 1.7rem;
   font-weight: 400;
@@ -1297,11 +1318,13 @@ footer .credit h5 {
     align-items: center;
     padding: 0;
     transform: none;
+    max-width: 12rem;
   }
   .event .card .box-date .title-event h3 {
     transform: rotate(-90deg);
     writing-mode: horizontal-tb;
     flex-direction: column;
+    white-space: nowrap;
   }
 
   .event .card .box-date .date-event {
@@ -1352,6 +1375,7 @@ footer .credit h5 {
     padding: 0;
     transform: none;
     order: 2;
+    max-width: 12rem;
   }
   .event-2 .card .box-date .title-event-2 h3 {
     transform: rotate(90deg);
@@ -1366,6 +1390,17 @@ footer .credit h5 {
     justify-content: start;
     align-items: center;
     border: none;
+  }
+
+  .event-2 .card .box-date .date-event-2 .tgl {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 25%;
+    font-size: 6rem;
+  }
+  .event-2 .card .box-date .date-event-2 .detail h5 {
+    font-size: 1.5rem;
   }
 
   .event-2 .card .box-date .date-event-2 .jam {
