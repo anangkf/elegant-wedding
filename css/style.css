@@ -60,7 +60,7 @@ body {
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.5);
-  background-image: url(../images/popup.JPG);
+  background-image: url(../images/front.jpg);
   background-size: cover;
   background-position: center; /* Latar belakang transparan */
   min-height: 100vh;
@@ -445,7 +445,7 @@ body {
 
 /* event */
 .bg-event {
-  background-image: url("../images/bg-event.jpg");
+  background-image: url("../images/bg.jpg");
   background-size: cover;
   overflow-x: hidden;
 }
@@ -530,7 +530,7 @@ body {
 .event .card .box-date .title-event h3 {
   font-size: 3rem;
   color: var(--bg);
-  font-family: power, sans-serif;
+  font-family: analogue, sans-serif;
   text-shadow: 1px 1px 3px rgba(252, 255, 254, 0.2);
   text-transform: uppercase;
   font-weight: normal;
@@ -662,7 +662,7 @@ body {
 .event-2 .card .box-date .title-event-2 h3 {
   font-size: 3rem;
   color: var(--bg);
-  font-family: power, sans-serif;
+  font-family: analogue, sans-serif;
   text-shadow: 1px 1px 3px rgba(252, 255, 254, 0.2);
   text-transform: uppercase;
   font-weight: normal;
@@ -1028,7 +1028,7 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url(../images/popup.JPG);
+  background-image: url(../images/bg-doa.jpg);
   background-size: cover;
   background-position: center;
   position: relative;

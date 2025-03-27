@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // fitur Hitung Mundur
 // Mengatur waktu akhir perhitungan mundur
-var countDownDate = new Date("Jul 30, 2023 10:00:00").getTime();
+var countDownDate = new Date("Apr 18, 2025 10:00:00").getTime();
 
 // Memperbarui hitungan mundur setiap 1 detik
 var x = setInterval(function () {
@@ -133,8 +133,8 @@ function resetCardStyles() {
   });
 }
 
-function noUtsman() {
-  var teks = document.getElementById("textSalin").textContent;
+function noDiki(message = 'Berhasil disalin!') {
+  var teks = document.getElementById("noRekDiki").textContent;
   var teksTanpaTanda = teks.replace(/-/g, "");
 
   var textarea = document.createElement("textarea");
@@ -144,10 +144,10 @@ function noUtsman() {
   textarea.select();
   document.execCommand("copy");
   document.body.removeChild(textarea);
-  toastr["success"]("No Dana Berhasil Disalin", "Success");
+  toastr["success"](message, "Success");
 }
-function noYani() {
-  var teks = document.getElementById("textSalin2").textContent;
+function noHesti(message = 'Berhasil disalin!') {
+  var teks = document.getElementById("noRekHesti").textContent;
   var teksTanpaTanda = teks.replace(/-/g, "");
 
   var textarea = document.createElement("textarea");
@@ -157,5 +157,5 @@ function noYani() {
   textarea.select();
   document.execCommand("copy");
   document.body.removeChild(textarea);
-  toastr["success"]("No Dana Berhasil Disalin", "Success");
+  toastr["success"](message, "Success");
 }
