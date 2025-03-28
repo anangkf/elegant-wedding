@@ -1183,9 +1183,12 @@ footer .credit h5 {
     align-items: center;
   }
 
-  /* .hero .content {
-    padding-top: 22rem;
-  } */
+  .hero {
+    align-items: flex-start;
+  }
+  .hero .content {
+    padding-top: 2rem;
+  }
 
   /* Quran */
   .quran {
