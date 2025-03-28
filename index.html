@@ -29,6 +29,10 @@
     <link rel="stylesheet" href="assets/sweetalert2/sweetalert2.min.css">
     <!-- Aos -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   </head>
   <body>
     
@@ -226,7 +230,7 @@
     <!-- end Event Section-->
 
     <!-- Start Galley Section -->
-     <div class="bg-gallery">
+     <!-- <div class="bg-gallery">
       <section class="gallery" id="gallery">
         <h2 data-aos="fade-right">Gallery Our Moment</h2>
 
@@ -260,7 +264,47 @@
           </div>
         </div>
       </section>
+    </div> -->
+    <div class="bg-gallery">
+      <section class="gallery" id="gallery">
+        <h2 data-aos="fade-right">Gallery Our Moment</h2>
+    
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/gallery/gallery-1.jpg" alt="Hesti & Diki">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/gallery/gallery-2.jpg" alt="Hesti & Diki">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/gallery/gallery-3.jpg" alt="Hesti & Diki">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/gallery/gallery-4.jpg" alt="Hesti & Diki">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/gallery/gallery-5.jpg" alt="Hesti & Diki">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/gallery/gallery-6.jpg" alt="Hesti & Diki">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/gallery/gallery-7.jpg" alt="Hesti & Diki">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/gallery/gallery-8.jpg" alt="Hesti & Diki">
+            </div>
+          </div>
+          <!-- Tombol Navigasi -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <!-- Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
     </div>
+    
     <!-- End Galley Section-->
     <!-- Start Wedding gift -->
     <section class="gift" id="gift">
@@ -367,17 +411,38 @@
     <script src="assets/sweetalert2/sweetalert2.all.min.js"></script>
     <script>
        
-        const gallery = document.querySelectorAll('.img');
+      const gallery = document.querySelectorAll('.img');
 
-        gallery.forEach((img, i) => {
-            img.dataset.aos = 'fade-down';
-            img.dataset.aosDelay = i * 100;
-        });
-        AOS.init({
-          duration: 1500,
-          once: true
-        });
-      </script>
+      gallery.forEach((img, i) => {
+          img.dataset.aos = 'fade-down';
+          img.dataset.aosDelay = i * 100;
+      });
+      AOS.init({
+        duration: 1500,
+        once: true
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+      });
+    });
+
+    </script>
      
   </body>
 </html>

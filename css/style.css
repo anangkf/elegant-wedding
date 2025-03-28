@@ -189,7 +189,7 @@ body {
   height: 100%;
   object-fit: cover;
   object-position: center;
-  aspect-ratio: 3/2;
+  aspect-ratio: 3/3;
   opacity: 0;
   transition: opacity 2s ease;
 }
@@ -793,7 +793,7 @@ body {
   width: 50%;
 }
 
-.gallery .container .img-gallery {
+/* .gallery .container .img-gallery {
   display: grid;
   grid-gap: 2rem;
 
@@ -810,6 +810,60 @@ body {
 .gallery .container .img-gallery img:hover {
   transform: scale(1.1);
   filter: brightness(35%);
+} */
+
+.bg-gallery {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* .gallery h2 {
+  text-align: center;
+  margin-bottom: 20px;
+} */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+/* Styling tombol Next & Prev */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: var(--dark-100);
+  opacity: 0.6;
+  font-size: 24px;
+}
+
+.swiper-button-next::after:hover,
+.swiper-button-prev::after:hover {
+  opacity: 1;
+}
+
+/* Styling Pagination Dots */
+.swiper-pagination-bullet {
+  background: var(--dark-75) !important;
+  opacity: 0.6 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--dark-100) !important;
+  opacity: 1 !important;
 }
 
 /* Gift */
@@ -1364,7 +1418,7 @@ footer .credit h5 {
   }
   .event-2 .card .box-img .slider-img img {
     width: 100%;
-    aspect-ratio: 3/2;
+    aspect-ratio: 3/3;
   }
   .event-2 .card .box-date {
     display: flex;
@@ -1416,6 +1470,11 @@ footer .credit h5 {
   /* gallery */
   .gallery .container .img-gallery {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .swiper-slide img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2 / 3;
   }
 
   /* gift */
