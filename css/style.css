@@ -1436,8 +1436,12 @@ footer .credit h5 {
   .rsvp .row .message {
     padding: 3rem 7%;
   }
+
+  .doa{
+    align-items: flex-start;
+  }
   .doa .content {
-    padding-top: 33rem;
+    padding-top: 6rem;
   }
 }
 
