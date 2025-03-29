@@ -268,8 +268,21 @@
     <div class="bg-gallery">
       <section class="gallery" id="gallery">
         <h2 data-aos="fade-right">Gallery Our Moment</h2>
-    
-        <div class="swiper mySwiper">
+
+        <div class="gallery-container">
+          <div id="boxImage">
+            <span><img src="images/gallery/gallery-1.jpg" alt="Hesti & Diki"></span>
+            <span><img src="images/gallery/gallery-2.jpg" alt="Hesti & Diki"></span>
+            <span><img src="images/gallery/gallery-3.jpg" alt="Hesti & Diki"></span>
+            <span><img src="images/gallery/gallery-4.jpg" alt="Hesti & Diki"></span>
+            <span><img src="images/gallery/gallery-5.jpg" alt="Hesti & Diki"></span>
+            <span><img src="images/gallery/gallery-6.jpg" alt="Hesti & Diki"></span>
+            <span><img src="images/gallery/gallery-7.jpg" alt="Hesti & Diki"></span>
+            <span><img src="images/gallery/gallery-8.jpg" alt="Hesti & Diki"></span>
+          </div>
+        </div>
+
+        <!-- <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <img src="images/gallery/gallery-1.jpg" alt="Hesti & Diki">
@@ -296,15 +309,15 @@
               <img src="images/gallery/gallery-8.jpg" alt="Hesti & Diki">
             </div>
           </div>
-          <!-- Tombol Navigasi -->
+
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
-          <!-- Pagination -->
+
           <div class="swiper-pagination"></div>
-        </div>
+        </div> -->
       </section>
     </div>
-    
+
     <!-- End Galley Section-->
     <!-- Start Wedding gift -->
     <section class="gift" id="gift">
@@ -440,6 +453,10 @@
           disableOnInteraction: false,
         },
       });
+    });
+
+    document.querySelectorAll("#boxImage span").forEach((span, index) => {
+      span.style.setProperty("--i", index + 1);
     });
 
     </script>
