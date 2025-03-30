@@ -1354,6 +1354,13 @@ footer .credit h5 {
     padding-top: 2rem;
   }
 
+  .recipient-title,
+  .recipient-subtitle,
+  .recipient-name {
+    font-size: 2rem;
+  }
+    
+
   /* Quran */
   .quran {
     padding: 3rem 1rem;
