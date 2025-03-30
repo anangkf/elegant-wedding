@@ -76,13 +76,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 7rem;
-  margin: 5rem auto;
+  /* padding-top: 7rem; */
+  margin: auto;
+  min-height: 100vh;
 }
 .popup-content {
+  min-height: 90vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: column;
   text-align: center;
   overflow: hidden;
@@ -94,7 +96,7 @@ body {
   text-shadow: 1px 1px 3px rgba(58, 79, 71, 0.8);
   font-weight: normal;
   text-transform: uppercase;
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
 }
 
 .popup-content h1 {
@@ -104,11 +106,37 @@ body {
   text-shadow: 1px 1px 3px rgba(58, 79, 71, 0.8);
   text-transform: uppercase;
   font-family: analogue, Sans-Serif;
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
   letter-spacing: 1px;
 }
 .popup-content h1 span {
   color: var(--warning);
+}
+
+.recipient-title {
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 3px rgba(58, 79, 71, 0.8);
+  font-weight: normal;
+  font-family: analogue, Sans-Serif;
+  color: var(--bg);
+  margin-bottom: 0.2rem;
+}
+
+.recipient-subtitle {
+  font-size: 1.5rem;
+  font-weight: normal;
+  font-family: analogue, Sans-Serif;
+  text-shadow: 1px 1px 3px rgba(58, 79, 71, 0.8);
+  color: var(--bg);
+  margin-bottom: 0.8rem;
+}
+
+.recipient-name {
+  font-size: 1.5rem;
+  font-weight: 500;  
+  color: var(--bg);
+  text-shadow: 1px 1px 3px rgba(58, 79, 71, 0.8);
+  margin-bottom: .5rem;
 }
 
 /* Gaya untuk tombol tutup */
@@ -1301,17 +1329,17 @@ footer .credit h5 {
   .popup-container {
     min-height: 100vh;
     display: flex;
-    align-items: flex-end;
-    align-content: flex-end;
-    padding: 25rem 3rem;
+    align-items: center;
+    align-content: flex-start;
+    /* padding: 25rem 3rem; */
     margin: 0 auto;
     overflow: hidden;
   }
 
   .popup-content {
     display: flex;
-    justify-content: center;
     align-items: center;
+    
   }
 
   .hero {

@@ -40,10 +40,17 @@
     <div id="myPopup" class="popup">
       <div class="popup-container">
         <div class="popup-content">
-          <h2 class="example1" data-aos="fade-down" data-aos-delay="800">The Wedding of</h2>
-          <h1 data-aos="zoom-in" data-aos-delay="0" data-aos-duration="2000">Diki <span> &</span> Hesti.</h1>
-          <button data-aos="fade-up" data-aos-delay="800" class="close"><i data-feather="mail" style="vertical-align: middle; "></i> Buka Undangan</button>
-          <audio id="popupAudio" src="audio/backsong.mp3"></audio> <!-- Ganti dengan path file audio yang sesuai -->
+          <div>
+            <h2 class="example1" data-aos="fade-down" data-aos-delay="800">The Wedding of</h2>
+            <h1 data-aos="zoom-in" data-aos-delay="0" data-aos-duration="2000">Diki <span> &</span> Hesti</h1>
+          </div>
+          <div>
+            <h3 class="recipient-title" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">Kepada Bapak/Ibu/Saudara/i</h3>
+            <p id="penerima" class="recipient-name" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000"></p>
+            <h3 class="recipient-subtitle" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">Tanpa mengurangi rasa hormat, kami mengundang Anda untuk hadir pada acara pernikahan kami.</h3>
+            <button data-aos="fade-up" data-aos-delay="1000" class="close"><i data-feather="mail" style="vertical-align: middle; "></i> Buka Undangan</button>
+            <audio id="popupAudio" src="audio/backsong.mp3"></audio> <!-- Ganti dengan path file audio yang sesuai -->
+          </div>
         </div>
       </div>
     </div>
@@ -423,6 +430,12 @@
     <!-- sweetalert -->
     <script src="assets/sweetalert2/sweetalert2.all.min.js"></script>
     <script>
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      const nama = urlParams.get('nama') || '-';
+
+      const penerima = document.getElementById('penerima');
+      penerima.innerText = nama;
        
       const gallery = document.querySelectorAll('.img');
 
@@ -435,7 +448,7 @@
         once: true
       });
 
-      document.addEventListener("DOMContentLoaded", function () {
+    /*document.addEventListener("DOMContentLoaded", function () {
       var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
         spaceBetween: 0,
@@ -453,7 +466,7 @@
           disableOnInteraction: false,
         },
       });
-    });
+    });*/
 
     document.querySelectorAll("#boxImage span").forEach((span, index) => {
       span.style.setProperty("--i", index + 1);
