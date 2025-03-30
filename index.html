@@ -437,12 +437,12 @@
       const penerima = document.getElementById('penerima');
       penerima.innerText = nama;
        
-      const gallery = document.querySelectorAll('.img');
+      // const gallery = document.querySelectorAll('.img');
 
-      gallery.forEach((img, i) => {
-          img.dataset.aos = 'fade-down';
-          img.dataset.aosDelay = i * 100;
-      });
+      // gallery.forEach((img, i) => {
+      //     img.dataset.aos = 'fade-down';
+      //     img.dataset.aosDelay = i * 100;
+      // });
       AOS.init({
         duration: 1500,
         once: true
