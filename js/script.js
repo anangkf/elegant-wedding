@@ -9,7 +9,7 @@ var logo = document.getElementById("logo");
 
 // Fungsi untuk menampilkan popup
 function showPopup() {
-  // popup.style.display = "flex";
+  popup.style.display = "flex";
   document.body.style.overflow = "hidden";
   setTimeout(function () {
     popup.style.transform = "translateY(0)";

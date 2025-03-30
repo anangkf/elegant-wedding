@@ -54,8 +54,7 @@ body {
 
 /* Gaya untuk popup */
 .popup {
-  /* display: none; Mulai dengan mengatur popup menjadi tersembunyi */
-  display: flex;
+  display: none; /* Mulai dengan mengatur popup menjadi tersembunyi */
   align-items: center;
   position: fixed;
   z-index: 9999;
