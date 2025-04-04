@@ -350,6 +350,7 @@ body {
   object-position: center;
   aspect-ratio: 2/3;
   box-shadow: 1rem 1rem 3rem rgba(58, 79, 71, 0.8);
+  border-radius: 12px;
 }
 
 .about .row .content {
@@ -411,6 +412,7 @@ body {
   object-position: center;
   aspect-ratio: 2/3;
   box-shadow: 1rem 1rem 3rem rgba(58, 79, 71, 0.8);
+  border-radius: 12px;
 }
 
 .about2 .row .content {
